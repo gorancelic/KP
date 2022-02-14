@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="GILE KP">
-        <wb-resource deploy-path="/" source-path="/appClientModule" tag="defaultRootSource"/>
+        
+    <wb-module deploy-name="TestRail">
+                
         <wb-resource deploy-path="/" source-path="/ImportedClasses"/>
-        <property name="java-output-path" value="/GILE KP/build/classes"/>
+        <wb-resource deploy-path="/" source-path="/java"/>
+                
+        <property name="java-output-path" value="/TestRail/build/classes"/>
+            
     </wb-module>
+    
 </project-modules>

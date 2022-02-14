@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\gcelic\AppData\Local\Temp\testng-eclipse-1047470833\testng-customsuite.xml</span>
+                    <span>C:\Users\gcelic\AppData\Local\Temp\testng-eclipse--1185242891\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content skipped suite-Default_suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="gile.kupujemprodajem.DataDrivenTestingUsingCSVInSelenium" class="method navigator-link" hash-for-method="dataRead_CSV">dataRead_CSV</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testovi.Login" class="method navigator-link" hash-for-method="LoginandPost">LoginandPost</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Default_suite -->
@@ -122,18 +122,24 @@
           <div class="suite-Default_suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">gile.kupujemprodajem.DataDrivenTestingUsingCSVInSelenium</span>
+              <span class="class-name">testovi.Login</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="dataRead_CSV">
-                  </a> <!-- dataRead_CSV -->
-                  <span class="method-name">dataRead_CSV</span>
-                  <div class="stack-trace">java.lang.NoClassDefFoundError: org/slf4j/Logger
+                  <a name="LoginandPost">
+                  </a> <!-- LoginandPost -->
+                  <span class="method-name">LoginandPost</span>
+                  <div class="stack-trace">java.lang.NoSuchMethodError: org.apache.logging.slf4j.Log4jLoggerFactory: method &apos;void &lt;init&gt;()&apos; not found
+	at org.slf4j.impl.StaticLoggerBinder.&lt;init&gt;(StaticLoggerBinder.java:53)
+	at org.slf4j.impl.StaticLoggerBinder.&lt;clinit&gt;(StaticLoggerBinder.java:41)
+	at org.slf4j.LoggerFactory.bind(LoggerFactory.java:128)
+	at org.slf4j.LoggerFactory.performInitialization(LoggerFactory.java:108)
+	at org.slf4j.LoggerFactory.getILoggerFactory(LoggerFactory.java:279)
+	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:252)
 	at org.apache.logging.slf4j.SLF4JLoggerContext.getLogger(SLF4JLoggerContext.java:39)
 	at org.apache.logging.log4j.LogManager.getLogger(LogManager.java:666)
-	at test.baza.BaseTest.setUp(BaseTest.java:23)
+	at test.baza.BaseTest.setUp(BaseTest.java:27)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -166,11 +172,6 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.ClassNotFoundException: org.slf4j.Logger
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:602)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
-	... 35 more
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -180,7 +181,7 @@ Caused by: java.lang.ClassNotFoundException: org.slf4j.Logger
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\gcelic\AppData\Local\Temp\testng-eclipse-1047470833\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\gcelic\AppData\Local\Temp\testng-eclipse--1185242891\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -189,7 +190,7 @@ Caused by: java.lang.ClassNotFoundException: org.slf4j.Logger
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;gile.kupujemprodajem.DataDrivenTestingUsingCSVInSelenium&quot;/&gt;
+      &lt;class name=&quot;testovi.Login&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -231,8 +232,8 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'dataRead_CSV')
-data.setCell(0, 2, 'gile.kupujemprodajem.DataDrivenTestingUsingCSVInSelenium')
+data.setCell(0, 1, 'LoginandPost')
+data.setCell(0, 2, 'testovi.Login')
 data.setCell(0, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
@@ -264,16 +265,16 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">gile.kupujemprodajem.DataDrivenTestingUsingCSVInSelenium</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testovi.Login</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">setUp(chrome, org.testng.TestRunner@5ab9e72c)</span>
+                <span class="method-name">setUp(chrome, org.testng.TestRunner@5939a379)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">dataRead_CSV</span>
-                <span class="method-start">82 ms</span>
+                <span class="method-name">LoginandPost</span>
+                <span class="method-start">85 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

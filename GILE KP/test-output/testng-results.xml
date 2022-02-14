@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-29T23:50:13 CEST" name="Default suite" finished-at="2021-10-29T23:50:13 CEST" duration-ms="133">
+  <suite started-at="2021-12-22T13:50:26 CET" name="Default suite" finished-at="2021-12-22T13:50:26 CET" duration-ms="125">
     <groups>
     </groups>
-    <test started-at="2021-10-29T23:50:13 CEST" name="Default test" finished-at="2021-10-29T23:50:13 CEST" duration-ms="133">
-      <class name="gile.kupujemprodajem.DataDrivenTestingUsingCSVInSelenium">
-        <test-method is-config="true" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:gile.kupujemprodajem.DataDrivenTestingUsingCSVInSelenium@6f96c77]" started-at="2021-10-29T23:50:13 CEST" name="setUp" finished-at="2021-10-29T23:50:13 CEST" duration-ms="73" status="FAIL">
+    <test started-at="2021-12-22T13:50:26 CET" name="Default test" finished-at="2021-12-22T13:50:26 CET" duration-ms="125">
+      <class name="testovi.Login">
+        <test-method is-config="true" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:testovi.Login@418e7838]" started-at="2021-12-22T13:50:26 CET" name="setUp" finished-at="2021-12-22T13:50:26 CET" duration-ms="77" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -16,19 +16,25 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@5ab9e72c]]>
+                <![CDATA[org.testng.TestRunner@5939a379]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NoClassDefFoundError">
+          <exception class="java.lang.NoSuchMethodError">
             <message>
-              <![CDATA[org/slf4j/Logger]]>
+              <![CDATA[org.apache.logging.slf4j.Log4jLoggerFactory: method 'void <init>()' not found]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: org/slf4j/Logger
+              <![CDATA[java.lang.NoSuchMethodError: org.apache.logging.slf4j.Log4jLoggerFactory: method 'void <init>()' not found
+at org.slf4j.impl.StaticLoggerBinder.<init>(StaticLoggerBinder.java:53)
+at org.slf4j.impl.StaticLoggerBinder.<clinit>(StaticLoggerBinder.java:41)
+at org.slf4j.LoggerFactory.bind(LoggerFactory.java:128)
+at org.slf4j.LoggerFactory.performInitialization(LoggerFactory.java:108)
+at org.slf4j.LoggerFactory.getILoggerFactory(LoggerFactory.java:279)
+at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:252)
 at org.apache.logging.slf4j.SLF4JLoggerContext.getLogger(SLF4JLoggerContext.java:39)
 at org.apache.logging.log4j.LogManager.getLogger(LogManager.java:666)
-at test.baza.BaseTest.setUp(BaseTest.java:23)
+at test.baza.BaseTest.setUp(BaseTest.java:27)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -61,27 +67,28 @@ at org.testng.TestNG.run(TestNG.java:1037)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.ClassNotFoundException: org.slf4j.Logger
-at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:602)
-at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
-at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
-... 35 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
+          </exception> <!-- java.lang.NoSuchMethodError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="dataRead_CSV()[pri:0, instance:gile.kupujemprodajem.DataDrivenTestingUsingCSVInSelenium@6f96c77]" started-at="2021-10-29T23:50:13 CEST" name="dataRead_CSV" finished-at="2021-10-29T23:50:13 CEST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NoClassDefFoundError">
+        <test-method signature="LoginandPost()[pri:0, instance:testovi.Login@418e7838]" started-at="2021-12-22T13:50:26 CET" name="LoginandPost" finished-at="2021-12-22T13:50:26 CET" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NoSuchMethodError">
             <message>
-              <![CDATA[org/slf4j/Logger]]>
+              <![CDATA[org.apache.logging.slf4j.Log4jLoggerFactory: method 'void <init>()' not found]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: org/slf4j/Logger
+              <![CDATA[java.lang.NoSuchMethodError: org.apache.logging.slf4j.Log4jLoggerFactory: method 'void <init>()' not found
+at org.slf4j.impl.StaticLoggerBinder.<init>(StaticLoggerBinder.java:53)
+at org.slf4j.impl.StaticLoggerBinder.<clinit>(StaticLoggerBinder.java:41)
+at org.slf4j.LoggerFactory.bind(LoggerFactory.java:128)
+at org.slf4j.LoggerFactory.performInitialization(LoggerFactory.java:108)
+at org.slf4j.LoggerFactory.getILoggerFactory(LoggerFactory.java:279)
+at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:252)
 at org.apache.logging.slf4j.SLF4JLoggerContext.getLogger(SLF4JLoggerContext.java:39)
 at org.apache.logging.log4j.LogManager.getLogger(LogManager.java:666)
-at test.baza.BaseTest.setUp(BaseTest.java:23)
+at test.baza.BaseTest.setUp(BaseTest.java:27)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -114,18 +121,13 @@ at org.testng.TestNG.run(TestNG.java:1037)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.ClassNotFoundException: org.slf4j.Logger
-at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:602)
-at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
-at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
-... 35 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
+          </exception> <!-- java.lang.NoSuchMethodError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dataRead_CSV -->
-      </class> <!-- gile.kupujemprodajem.DataDrivenTestingUsingCSVInSelenium -->
+        </test-method> <!-- LoginandPost -->
+      </class> <!-- testovi.Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
